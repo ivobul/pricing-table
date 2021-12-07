@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <h1 class="header__heading">Find the best plan for you</h1>
+          <form class="form">
+            <div class="form__box">
+              <input type="radio" id="monthly" class="radio-btn monthly" name="price" value="monthly"
+              checked>
+              <label for="monthly" class="label">Billed monthly</label>
+            </div>
+            <div class="form__box">
+              <input type="radio" id="yearly" class="radio-btn yearly" name="price" value="yearly">
+              <label for="yearly" class="label">Billed yearly</label>
+            </div>
+          </form>
+        </div><!-- Header -->
+        <div class="pricing-table">
+          <div class="col standard">
+            <h2 class="col__header">Standard</h2>
+            <div class="price-box">
+              <p class="price">9 Eur</p>
+              <p class="small-text">per person, per month</p>
+              <p class="old-price"></p>
+              <p class="important-message"></p>
+            </div><!-- Price box -->
+            <ul class="list">
+              <li class="list__heading">Top features:</li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Unlimited search</span>
+              </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">10 apps</span>
+              </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Group calls</span>
+              </li>
+            </ul><!-- List -->
+            <div class="links">
+              <a href="" class="link btn">Try for free</a>
+              <a href="" class="link link-info">Learn more</a>
+            </div><!-- Links -->
+          </div><!-- Column - Standard -->
+          <div class="col advanced">
+            <h2 class="col__header">Advanced</h2>
+            <div class="price-box">
+              <p class="price">15 Eur</p>
+              <p class="small-text">per person, per month</p>
+              <p class="old-price"></p>
+              <p class="important-message"></p>
+            </div><!-- Price box -->
+            <ul class="list">
+              <li class="list__heading">Top features:</li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Advanced admin controls</span>
+              </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Domain verification</span>
+              </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Message exports</span>
+              </li>
+            </ul><!-- List -->
+            <div class="links">
+              <a href="" class="link btn">Try for free</a>
+              <a href="" class="link link-info">Learn more</a>
+            </div><!-- Links -->
+          </div><!-- Column - Advanced -->
+          <div class="col enterprise">
+            <h2 class="col__header">Enterprise</h2>
+            <div class="price-box">
+              <p class="price">20 Eur</p>
+              <p class="small-text">per person, per month</p>
+              <p class="old-price"></p>
+              <p class="important-message"></p>
+            </div><!-- Price box -->
+            <ul class="list">
+              <li class="list__heading">Top features:</li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Unlimited workspaces</span>
+              </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Data loss prevention</span>
+              </li>
+              <li class="list__item">
+              <span class="material-icons">check</span>
+              <span class="list__item-text">Network control</span>
+              </li>
+            </ul><!-- List -->
+            <div class="links">
+              <a href="" class="link btn">Contact Sales</a>
+              <a href="" class="link link-info">Learn more</a>
+            </div><!-- Links -->
+          </div><!-- Column - Enterprise -->
+        </div><!-- Pricing table -->
+      </div><!-- main -->
+    </div><!-- Container -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,297 @@
+/* CSS Reset */
+/* Resetting margins, paddings, and borders */
+html, body,
+h1, h2, h3, h4, h5, h6,
+a, p, span,
+em, small, strong,
+sub, sup,
+mark, del, ins, strike,
+abbr, dfn,
+blockquote, q, cite,
+code, pre,
+ol, ul, li, dl, dt, dd,
+div, section, article,
+main, aside, nav,
+header, hgroup, footer,
+img, figure, figcaption,
+address, time,
+audio, video,
+canvas, iframe,
+details, summary,
+fieldset, form, label, legend,
+table, caption,
+tbody, tfoot, thead,
+tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Sizing - Height */
+body {
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+/* Resetting specific element styles */
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Basic rules */
+.body {
+  background-color: rgb(228, 238, 238);
+  font-family: 'Lato', sans-serif;
+  font-size: .9rem;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 30px;
+}
+
+.main {
+  flex-basis: 900px;
+}
+
+.header {
+  text-align: center
+}
+
+.header__heading {
+  font-size: 1.6rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.form__box {
+  flex-basis: 150px;
+}
+
+.label {
+  display: inline-block;
+  text-align: left;
+  width: 100px;
+}
+
+.radio-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid rgb(209, 194, 194);
+  border-radius: 50%;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  width: 20px;
+}
+
+.radio-btn:checked {
+  background-color: #10182fd7;
+  border: 3px solid #fff;
+  outline: unset !important /* this one for Edge (chromium) support */
+}
+
+.pricing-table {
+  display: flex;
+  margin: 40px auto 0;
+  max-width: 850px;
+  min-height: 400px;
+}
+
+.col {
+  background-color: #fff;
+  border: 1px solid rgb(200, 200, 211);
+  border-radius: 6px;
+  flex: 1;
+  padding: 20px;
+}
+
+.col:not(:last-child) {
+  margin-right: 10px;
+}
+
+.col__header {
+  font-size: 1rem;
+}
+
+.price-box {
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.old-price {
+  display: none;
+  margin-top: 10px;
+  text-decoration: line-through;
+}
+
+.important-message {
+  display: none;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.small-text {
+  font-size: .8rem;
+  color: #525255;
+}
+
+.list {
+  margin-top: 30px; 
+}
+
+.list__heading {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.list__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.material-icons {
+  font-size: 1rem;
+  font-weight: bold;
+  vertical-align: -3px;
+}
+
+.list__item-text {
+  display: inline-block;
+}
+
+.links {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.link {
+  display: block;
+}
+
+.btn {
+  background-color: #fff;
+  border: 1px solid rgb(185, 185, 194);
+  border-radius: 30px;
+  font-size: .87rem;
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 180px;
+  padding: 5px 12px;
+}
+
+.btn:hover {
+  background-color: #222A3D;
+  border: 1px solid #222A3D;
+  color: #fff;
+}
+
+.btn:active { 
+  color: rgb(235, 219, 219);
+}
+
+.link-info {
+  color: rgba(0, 0, 255, 0.76);
+  margin-top: 20px;
+}
+
+.link-info:visited {
+  color: rgba(0, 0, 255, 0.76);
+  text-decoration: underline;
+}
+
+.link-info:hover {
+  color: rgba(0, 0, 255, 0.76);
+  text-decoration: underline;
+}
+
+.link-info:active {
+  color: rgba(247, 5, 5, 0.664);
+}
+
+@media screen and (max-width: 767px) {
+  .pricing-table {
+    flex-direction: column;
+  }
+
+  .col {
+    text-align: center;
+  }
+
+  .col:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .col__header {
+    font-size: 1.1rem;
+  }
+
+  .list {
+    text-align: center;
+  }
+
+  .list__item:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .list__item-text {
+    display: block;
+  }
+
+  .btn {
+    max-width: 250px;
+  }
+}
