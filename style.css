@@ -217,14 +217,11 @@ a {
   text-align: center;
 }
 
-.link {
-  display: block;
-}
-
 .btn {
   background-color: #fff;
   border: 1px solid rgb(185, 185, 194);
   border-radius: 30px;
+  display: block;
   font-size: .87rem;
   font-weight: bold;
   margin: 0 auto;
@@ -244,6 +241,7 @@ a {
 
 .link-info {
   color: rgba(0, 0, 255, 0.76);
+  display: inline-block;
   margin-top: 20px;
 }
 
