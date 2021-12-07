@@ -1,4 +1,4 @@
-# Pricing Table
+# Pricing Table | Web Dev Exercise (HTML/CSS/JavaScript) 
 
 ![preview](design/preview.png)
 
