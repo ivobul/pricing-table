@@ -80,6 +80,7 @@ a {
 /* Basic rules */
 .body {
   background-color: rgb(228, 238, 238);
+  color: #222A3D;
   font-family: 'Lato', sans-serif;
   font-size: .9rem;
 }
@@ -218,8 +219,7 @@ a {
 }
 
 .btn {
-  background-color: #fff;
-  border: 1px solid rgb(185, 185, 194);
+  border: 1px solid transparent;
   border-radius: 30px;
   display: block;
   font-size: .87rem;
@@ -229,25 +229,36 @@ a {
   padding: 5px 12px;
 }
 
-.btn:hover {
+.btn:link {
   background-color: #222A3D;
-  border: 1px solid #222A3D;
   color: #fff;
 }
 
+.btn:visited {
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border: 1px solid rgb(185, 185, 194);
+  color: #222A3D;
+}
+
 .btn:active { 
-  color: rgb(235, 219, 219);
+  color: rgba(34, 42, 61, 0.753);
 }
 
 .link-info {
-  color: rgba(0, 0, 255, 0.76);
   display: inline-block;
   margin-top: 20px;
 }
 
+.link-info:link {
+  color: rgba(0, 0, 255, 0.76);
+}
+
 .link-info:visited {
   color: rgba(0, 0, 255, 0.76);
-  text-decoration: underline;
 }
 
 .link-info:hover {
