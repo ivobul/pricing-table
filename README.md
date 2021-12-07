@@ -1,1 +1,3 @@
-# pricing-table
+# Pricing Table
+
+![preview](design/preview.png)
