@@ -226,26 +226,39 @@ a {
   font-weight: bold;
   margin: 0 auto;
   max-width: 180px;
-  padding: 5px 12px;
+  padding: 8px 12px;
+  transition: .4s;
 }
 
-.btn:link {
-  background-color: #222A3D;
-  color: #fff;
-}
-
-.btn:visited {
-  color: #fff;
-}
-
-.btn:hover {
+.btn--normal {
   background-color: #fff;
   border: 1px solid rgb(185, 185, 194);
   color: #222A3D;
 }
 
-.btn:active { 
-  color: rgba(34, 42, 61, 0.753);
+.btn--normal:visited {
+  color: #222A3D;
+}
+
+.btn--normal:hover {
+  background-color: #222A3D;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.btn--alternate {
+  background-color: #222A3D;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.btn--alternate:visited {
+  color: #fff;
+}
+
+.btn--alternate:hover {
+  background-color: #3d4c6e;
+  
 }
 
 .link-info {
